@@ -15,7 +15,8 @@ fun AppNavigation(navController: NavHostController, modifier: Modifier = Modifie
         modifier = modifier
     ) {
         composable("batiments_list") {
-            Text("Page Bâtiments")
+            //Text("Page batiments")
+            BatimentList()
         }
         composable("appartements_list") {
             Text("Page Appartements")
