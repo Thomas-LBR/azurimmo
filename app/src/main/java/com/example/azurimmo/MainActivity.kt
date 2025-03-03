@@ -11,25 +11,27 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import bts.sio.azurimmo.views.MainScreen
 import com.example.azurimmo.ui.theme.AzurimmoTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContent {
-            AzurimmoTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
-            }
+            MainScreen()
         }
     }
 }
 
+
+
+@Preview(showBackground = true)
+@Composable
+fun MainActivityPreview() {
+    AzurimmoTheme {
+        MainScreen()
+    }
+}
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
     Text(

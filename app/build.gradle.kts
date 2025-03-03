@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "bts.sio.azurimmo3"
+    namespace = "com.example.azurimmo"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "bts.sio.azurimmo3"
+        applicationId = "com.example.azurimmo"
         minSdk = 24
         targetSdk = 35
         versionCode = 1
