@@ -19,16 +19,17 @@ fun AppNavigation(navController: NavHostController, modifier: Modifier = Modifie
             BatimentList()
         }
         composable("appartements_list") {
-            Text("Page Appartements")
+            //Text("Page appartements_list")
+            AppartementList()
         }
         composable("contrats_list") {
-            Text("Page Contrats")
+            ContratList()
         }
         composable("locataires_list") {
-            Text("Page Locataires")
+            LocataireList()
         }
         composable("paiements_list") {
-            Text("Page Paiements")
+            PaiementList()
         }
     }
 }
