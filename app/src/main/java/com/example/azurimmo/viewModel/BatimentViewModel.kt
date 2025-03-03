@@ -1,3 +1,5 @@
+package com.example.azurimmo.viewModel
+
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import bts.sio.azurimmo.model.Batiment
